@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Weight Tracker</title>
+        <!-- Linked CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="#">
+    </head>
+    <!-- Head Ends -->
+    
+
+    <body onload="charts()" > <!-- Loads chart when web-page loads -->
+        <header>
+            <h1 style="text-align: center">Weight Tracker</h1>
+        </header>
+        <!-- Header Ends -->
+
+        <div id="main-content">
+            <form id="weight-input">
+                <input type="number" placeholder="Enter Your Weight" id="input" >
+                <button type="button" class="btn btn-info" id="button1" onclick="register();  store(); charts();" >Save</button> <!--Accessing Functions when button gets clicked-->
+            </form>
+            <p id="note" style="text-align: center; margin-top: 10px"></p>
+            <div id="curve_chart" style="width: 900px; height: 500px; "></div>
+            
+        </div>
+        <!-- Main Content Ends -->
+
+        <footer>
+
+        </footer>
+        <!-- Footer Ends -->
+
+        <!-- Linked Scripts -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/chart.js"></script>
+        <script src="js/google.js"></script>
+    </body>
+    <!-- Body Ends -->
+</html>
